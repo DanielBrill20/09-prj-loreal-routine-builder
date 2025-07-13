@@ -23,10 +23,10 @@
         <h1 class="site-title">Smart Routine &amp; Product Advisor</h1>
       </header>
 
-      <!-- Category Filter -->
+      <!-- Category Filter, Product Search, RTL Toggle -->
       <div class="search-section">
         <select id="categoryFilter">
-          <option value="" disabled selected>Choose a Category</option>
+          <option value="" selected>All Products</option>
           <option value="cleanser">Cleansers</option>
           <option value="moisturizer">Moisturizers & Treatments</option>
           <option value="haircare">Haircare</option>
@@ -37,6 +37,18 @@
           <option value="suncare">Suncare</option>
           <option value="fragrance">Fragrance</option>
         </select>
+        <input
+          type="text"
+          id="productSearchInput"
+          placeholder="Search products by name or keyword..."
+        />
+      </div>
+      <!-- Product Description Popup -->
+      <div id="descModal" class="desc-modal" style="display: none">
+        <div class="desc-modal-content">
+          <span id="descModalClose" class="desc-modal-close">&times;</span>
+          <div id="descModalText"></div>
+        </div>
       </div>
 
       <!-- Products Grid -->
